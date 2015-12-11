@@ -1,10 +1,19 @@
 mean-starter
 =====
 
-#### Getting started
+### Getting started
 ```
 $ git clone <this_repo>
 $ npm install
-$ nodemon server # OR npm start
+$ nodemon server
 ```
-![aaaand I'm a dork](http://i.imgur.com/Vl8Ol6N.jpg)
+
+### Deploy to Heroku
+```
+heroku create <app_name>
+heroku config:set NODE_ENV=production
+heroku addons:create mongolab:sandbox 
+heroku config | grep MONGOLAB_URI
+git push heroku master
+heroku ps:scale web=1
+```
