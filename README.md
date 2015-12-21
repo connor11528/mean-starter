@@ -3,7 +3,8 @@ mean-starter
 
 ### Getting started
 ```
-$ git clone <this_repo>
+$ git clone <this_repo_url>
+$ cd mean-starter
 $ npm install
 $ nodemon server
 ```
